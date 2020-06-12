@@ -1,9 +1,10 @@
+/* Replaced all the p tags with h6 */
+
 body {
 	font-family: "Roboto", sans-serif;
 	margin: 0;
   }
  
-
   h1 {
 	padding: 8px;
 	background: rgba(255, 0, 0, 0.8);
@@ -14,7 +15,7 @@ body {
   }
   
 
-  p {
+  h6{
 	line-height: 1.5;
   }
   
@@ -31,76 +32,8 @@ body {
 	text-decoration: underline;
   }
   
-  /* Banner */
-
- #banner {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background: rgba(0, 0, 0, 0.2) url("images/girl.jpg");
-	background-size: cover;
-	background-position: center;
-	background-blend-mode: overlay;
-	color: lightcoral;
-  }
-  
-  #banner p {
-	border-radius: 8px;
-	padding: 0 24px;
-	font-size: 24px;
-  }
- 
-  .container1{
-	  display: flex;
-	  flex-wrap: wrap;
-	  position: absolute;
-	  top: 25vmin;
-	  padding-left: 50vmax;
-	  border-radius: 10px;
-  }
-
-  .container1 .box1{
-	  position: relative;
-	  width: 350px;
-	  padding: 40px;
-	  background: rgb(16, 16, 68);
-	  opacity: 0.85;
-	  border-radius: 2px;
-	  box-sizing: border-box;
-  }
-
-  .container1 .box1 .content1 h3{
-	  font-size: 4vh;
-	  padding: 0;
-	  font-family: Arial, Helvetica, sans-serif;
-	  font-weight: bolder;
-	  color: rgb(230, 138, 27);
-  }
-
-  .container1 .box1 .content1 p{
-	font-size: 2vh;
-	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	color: rgb(235, 204, 158);
-  }
-
-  .container1 .box1 .content1 a{
-	  display: inline-block;
-	  padding: 2vmin 4vmin;
-	  background: aqua;
-	  text-decoration: none;
-	  color: #000;
-	  font-weight: 500;
-	  margin-top: 20px;
-	  box-shadow: 0 2pz 5px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Navigation */
-  
-  nav {
+ /* Navigation bar */
+ nav {
 	height: 69px;
 	background: #202125;
 	width: 100%;
@@ -113,6 +46,7 @@ body {
 	padding: 0 16px 0 0;
 	box-sizing: border-box;
 	z-index: 100;
+	
   }
   
   nav a {
@@ -196,6 +130,7 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 	background-color: yellowgreen;
+	justify-content: center;
   }
 
   .primary-btn:hover{
@@ -239,6 +174,79 @@ body {
 	font-size: 20px;
 	text-align: center;
   }
+  
+
+
+  /* Banner */
+
+ #banner {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.2) url("images/girl.jpg");
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	color: lightcoral;
+  }
+  
+  #banner h6 {
+	border-radius: 8px;
+	padding: 0 24px;
+	font-size: 24px;
+  } 
+  
+ /* Box code modified on 12/6/2020 */
+  .container1{
+	  display: flex;
+	  flex-wrap: wrap;
+	  position: absolute;
+	  top: 25vmin;
+	  padding-left: 50vmax;
+	  border-radius: 10px;
+  }
+
+  .container1 .box1{
+	  position: relative;
+	  width: 350px;
+	  padding: 40px;
+	  background: rgb(16, 16, 68);
+	  opacity: 0.85;
+	  border-radius: 2px;
+	  box-sizing: border-box;
+  }
+
+  .container1 .box1 .content1 h3{
+	  font-size: 4vh;
+	  padding: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-weight: bolder;
+	  color: rgb(230, 138, 27);
+  }
+
+  .container1 .box1 .content1 h6{
+	font-size: 2vh;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	color: rgb(235, 204, 158);
+  }
+
+  .container1 .box1 .content1 a{
+	  display: inline-block;
+	  padding: 2vmin 4vmin;
+	  background: aqua;
+	  text-decoration: none;
+	  color: #000;
+	  font-weight: 500;
+	  margin-top: 20px;
+	  box-shadow: 0 2pz 5px rgba(0, 0, 0, 0.2);
+  }
+
+  
+
   
  /* Section 1 */
 
@@ -294,7 +302,7 @@ body {
 	color: rgba(180, 99, 33, 0.836);
   }
   
-  .section-2 .row .col-md-6 .panel p {
+  .section-2 .row .col-md-6 .panel h6 {
 	font-size: 1em;
 	font-weight: bold;
 	color: rgb(37, 6, 6);
@@ -350,7 +358,7 @@ body {
 	color: whitesmoke;
   }
   
-  .cover .content > p {
+  .cover .content > h6 {
 	font-family: var(--Rubik);
 	font-size: 5vmin;
 	color: #e5e5e5;
@@ -377,7 +385,7 @@ body {
 	color: tomato;
   }
   
-  .numbers .rect > p {
+  .numbers .rect > h6 {
 	font-family: var(--Patua);
   }
 
@@ -405,7 +413,7 @@ body {
 
   .form-container{
 	  position: absolute;
-	  top: 25vmin;
+	  top: 5vmin;
 	  background-color: #fff;
 	  padding: 30px;
 	  border-radius: 10px;
@@ -480,7 +488,7 @@ body {
   
   
   /* Media Queries */
-  
+ 
   @media (max-width: 900px) {
 	nav ul {
 	  display: none;
@@ -531,6 +539,8 @@ body {
 	}
   }
   
+
+  
   @media (max-width: 600px) {
 	main {
 	  width: 100%;
@@ -538,9 +548,10 @@ body {
 
 	#logo-img {
 	  padding: 0;
-	}
+	} 
+
   }
-  
+
   @media (min-width: 720px) {
 	main {
 	  width: 100%;
@@ -552,5 +563,3 @@ body {
 	  width: 100%;
 	}
   }
-
- 
