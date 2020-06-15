@@ -125,17 +125,20 @@ body {
 	text-decoration: none;
 	background-color: lightblue;
   }
-
-  .primary-btn {
-	font-weight: bold;
-	cursor: pointer;
-	background-color: yellowgreen;
-	justify-content: center;
+   
+  /* 15/6/2020 Download App Button modified */
+  .navigation{
+    background: yellowgreen;
+    justify-content: center;
+    color: #fff;
   }
 
-  .primary-btn:hover{
-	color: black;
+  .navigation:hover{
+    background: rgb(197, 214, 162);
+    transition: 0.2s;
   }
+
+  /* end of 15/6/2020 Download App Button modified */
 
   /* Slideout Menu */
   
@@ -177,9 +180,9 @@ body {
   
 
 
-  /* Banner */
+ /* Backgroun Image 15/06/2020 */
 
- #banner {
+ .background {
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -192,11 +195,13 @@ body {
 	color: lightcoral;
   }
   
-  #banner h6 {
+  .background h6 {
 	border-radius: 8px;
 	padding: 0 24px;
 	font-size: 24px;
   } 
+
+  /*End of background Image 15/16/2020 */
   
  /* Box code modified on 12/6/2020 */
   .container1{
