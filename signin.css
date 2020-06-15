@@ -123,17 +123,18 @@ body {
 	text-decoration: none;
 	background-color: lightblue;
   }
-
-  .primary-btn {
-	font-weight: bold;
-	cursor: pointer;
-	background-color: yellowgreen;
-	justify-content: center;
+ 
+  .navigation{
+    background: yellowgreen;
+    justify-content: center;
+    color: #fff;
   }
 
-  .primary-btn:hover{
-	color: black;
+  .navigation:hover{
+    background: rgb(197, 214, 162);
+    transition: 0.2s;
   }
+
 
   /* Slideout Menu */
   
@@ -173,28 +174,21 @@ body {
 	text-align: center;
   }
 
-   /* Banner */
-
- #banner {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background: rgba(0, 0, 0, 0.2) url("images/signin.jpg");
-	background-size: cover;
-	background-position: center;
-	background-blend-mode: overlay;
-    color: lightcoral;
-    opacity: 0.65;
-  }
-  
-  #banner h6 {
-	border-radius: 8px;
-	padding: 0 24px;
-	font-size: 24px;
-  } 
  /* Login-box */
+ 
+  .background{  
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(15, 15, 15, 0.2) url("images/signin.jpg");
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      color: lightcoral;
+  }
+
   .login-box{
       position: relative;
       margin: 10% auto;
@@ -212,7 +206,7 @@ body {
       padding: 30px;
       width: 300px;
       height: 400px;
-      background-color: #111;
+      background-color: rgb(2, 2, 2);
   }
   h2{
       margin-bottom: 20px;
@@ -271,11 +265,27 @@ body {
       background: #32508e;
   }
 
+  .facebook:hover{
+    background: #b2c9f7;
+    transition: 0.2s;
+  }
+
   .google{
     background: #dd4b39;
   }
+
+  .google:hover{
+    background: #daa29b;
+    transition: 0.2s;
+  }
+
   .twitter{
     background: #55acee;
+  }
+
+  .twitter:hover{
+    background: #a8c8e0;
+    transition: 0.2s;
   }
 
   .or{
